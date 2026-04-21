@@ -197,34 +197,6 @@ pip install -r requirements.txt
 - `pillow` — Traitement images
 - `jupyter` — Notebooks interactifs
 
-### Configuration du projet
-
-Éditer `config.py` pour adapter les chemins et paramètres :
-
-```python
-# Racine du projet
-ROOT = Path("/home/mayna/fss")
-DATA_DIR = ROOT / "data"
-
-# Promotion à analyser
-ANNEE = "I1"   # P1 | P2 | I1 | I2 | I3
-PROMO = None   # None = toutes les promos, ou ex: 1
-
-# Seuils de qualité
-SEUIL_NAN_MODULE   = 0.35   # % max de NaN par matière
-SEUIL_NAN_ETUDIANT = 0.45   # % max de NaN par étudiant
-
-# Palette de couleurs pour les visualisations
-PALETTE_PASSAGE = {
-    "admis":        "#2ecc71",
-    "rattrapage":   "#e67e22",
-    "redoublement": "#e74c3c",
-    "en_cours":     "#3498db",
-}
-```
-
----
-
 ## 🚀 Exécution des notebooks
 
 ### Option A : Jupyter Lab (recommandé)
@@ -272,12 +244,12 @@ jupyter nbconvert --to html notebooks/03_data_cleaning.ipynb
    - Tests statistiques (Kruskal-Wallis, Mann-Whitney)
    - Visualisations (violin plots, corrélations)
 
-5. **05_multivariate.ipynb** — Analyse multivariée
+5. **04_multivariate.ipynb** — Analyse multivariée
    - PCA : réduction dimensionnelle
    - SVD : factorisation matricielle
    - AFC : correspondances catégorielles
 
-6. **04_profils_etudiants.ipynb** — Profils démographiques
+6. **05_profils_etudiants.ipynb** — Profils démographiques
    - Répartition genre, bac, licence
    - Analyse par promotion
 
@@ -317,19 +289,6 @@ jupyter nbconvert --to html notebooks/03_data_cleaning.ipynb
 
 ---
 
-## 📊 Seuils et paramètres clés
-
-| Paramètre | Valeur | Justification |
-|-----------|--------|---------------|
-| `SEUIL_NAN_MODULE` | 35% | Exclure les matières avec >35% de notes manquantes |
-| `SEUIL_NAN_ETUDIANT` | 45% | Exclure les étudiants avec >45% de notes manquantes |
-| K-Means k | 3 | Déterminé par silhouette score |
-| HAC linkage | ward | Minimise variance intra-cluster |
-| Train/test split | 80/20 | Standard ML |
-| Random state | 42 | Reproductibilité |
-| PCA variance | 95% | Seuil de variance expliquée |
-
----
 
 ## 📈 Interprétation des résultats
 
@@ -354,30 +313,6 @@ Les matières/modules les plus importants pour prédire le passage :
 
 ---
 
-## 🐛 Troubleshooting
-
-### Erreur : "Module not found"
-```bash
-pip install -r requirements.txt
-```
-
-### Erreur : "File not found" dans les notebooks
-Vérifier que `config.py` pointe vers les bons chemins (adapter `ROOT`, `DATA_DIR`, etc.)
-
-### Valeurs manquantes excessives
-Vérifier les seuils dans `config.py` :
-- Augmenter `SEUIL_NAN_MODULE` si trop de matières sont exclues
-- Augmenter `SEUIL_NAN_ETUDIANT` si trop d'étudiants sont exclus
-
-### Clusters non stables
-Vérifier la graine aléatoire (`random_state=42`) et augmenter le nombre d'itérations K-Means
-
-### Problèmes de mémoire
-- Réduire la taille du dataset en filtrant par promotion
-- Utiliser `PROMO = 1` dans `config.py` pour analyser une seule promotion
-
----
-
 ## 📚 Références et ressources
 
 ### Techniques statistiques
@@ -396,15 +331,6 @@ Vérifier la graine aléatoire (`random_state=42`) et augmenter le nombre d'ité
 - **Random Forest** : Ensemble non-linéaire, robuste
 - **Gradient Boosting** : Meilleure performance, mais moins interprétable
 
----
-
-## 📞 Support et contributions
-
-Pour toute question ou amélioration :
-1. Vérifier les logs des notebooks
-2. Consulter les commentaires dans le code
-3. Adapter les paramètres dans `config.py`
-4. Vérifier les seuils de qualité des données
 
 ---
 
@@ -449,6 +375,4 @@ Ce projet contient des données d'étudiants anonymisées. Respecter les règles
 ---
 
 **Dernière mise à jour** : Avril 2026  
-**Version** : 2.0  
-**Auteur** : Équipe d'analyse  
-**Statut** : Production
+**Auteurs** : Ons Mhiri et Emna Mnejja
