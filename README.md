@@ -2,7 +2,7 @@
 
 ## 📋 Vue d'ensemble du projet
 
-Suite complète de **notebooks Jupyter** pour l'analyse longitudinale de **143 étudiants** répartis sur **4 promotions** (P1, P2, I1, I2, I3) d'une école d'ingénierie tunisienne. Le projet couvre l'analyse des performances académiques sur **2 semestres**, portant sur **26 matières** organisées en **9 modules**.
+Suite complète de **notebooks Jupyter** pour l'analyse longitudinale de **143 étudiants** répartis sur **3 promotions** (1,2,3) de l'ingénieurie de données en Faculté des Sciences de Sfax. Le projet couvre l'analyse des performances académiques sur **2 semestres** de l'année I1, portant sur **26 matières** organisées en **10 modules**.
 
 **Objectif principal :** Identifier les patterns de performance, prédire les risques d'échec et segmenter les étudiants en profils homogènes pour améliorer le suivi pédagogique.
 
