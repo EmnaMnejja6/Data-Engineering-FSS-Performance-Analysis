@@ -1,0 +1,27 @@
+﻿id_mat,nom_mat,nom_module,semestre
+i01,algo.num1,Mathématiques 5,S1
+i02,opt prog lineaire,Mathématiques 5,S1
+i03,prog java 2,Développement 5,S1
+i04,test log,Développement 5,S1
+i05,agile,Développement 5,S1
+i06,théo de l inf cod cr,"Th info, entrepot & IHM",S1
+i07,mod UML/OCL,"Th info, entrepot & IHM",S1
+i08,ent de données,"Th info, entrepot & IHM",S1
+i09,fond de l'IA,IA & Virtualisation,S1
+i10,virtualisation,IA & Virtualisation,S1
+i11,TOEIC3,Mathématiques 6,S1
+i12,gest des ress hum,Mathématiques 6,S1
+i13,sem et proj,Mathématiques 6,S1
+i14,opt&prog nn lin,Mathématiques 6,S2
+i15,algo num2,Mathématiques 6,S2
+i16,devops1,"ML, DevOp & dev mobile",S2
+i17,appr auto,"ML, DevOp & dev mobile",S2
+i18,Devp mob,"ML, DevOp & dev mobile",S2
+i19,prog log,Sémantique & Sys distribué,S2
+i20,tech sem,Sémantique & Sys distribué,S2
+i21,ches de mkv-fil d'at,Sémantique & Sys distribué,S2
+i22,init au big data,Big Data & Cloud,S2
+i23,cloud comp,Big Data & Cloud,S2
+i24,TOEIC4,Mathématiques 5,S2
+i25,dt des entpses,Mathématiques 5,S2
+i26,vtes ind,Mathématiques 5,S2
