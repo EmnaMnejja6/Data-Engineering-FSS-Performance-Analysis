@@ -158,7 +158,7 @@ Suite complète de **notebooks Jupyter** pour l'analyse longitudinale de **143 �
 
 | Algorithme | Paramètres | Sortie |
 |-----------|-----------|--------|
-| **K-Means** | k=3 (silhouette) | Centroïdes, assignations |
+| **K-Means** | k=2 (silhouette) | Centroïdes, assignations |
 | **HAC** | linkage=ward | Dendrogramme, dendrogramme coupé |
 | **Profiling** | Radar charts | Caractéristiques moyennes par cluster |
 
